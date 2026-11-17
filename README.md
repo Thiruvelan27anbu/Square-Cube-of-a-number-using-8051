@@ -27,23 +27,10 @@ MOV @R0,A
 END
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```
 
 ## OUTPUT
-<img width="1600" height="847" alt="exp 2 mpmc" src="https://github.com/user-attachments/assets/fdcb4d2d-78fa-41eb-b667-6a0ad8391839" />
+<img width="1600" height="844" alt="image" src="https://github.com/user-attachments/assets/845ef734-092b-4877-b847-f295ab08c789" />
 
 
 ## RESULT
@@ -82,17 +69,12 @@ MOV @R0,B
 END
 
 
-
-
-
-
-
-
 ```
 
 
 ## OUTPUT
-<img width="1600" height="847" alt="549770706-baf7c6b3-4d10-436f-bb2f-4cb04b70731e" src="https://github.com/user-attachments/assets/308a1b35-68fb-4c61-a69b-9cddf980e4cb" />
+<img width="1600" height="852" alt="image" src="https://github.com/user-attachments/assets/675a9c38-9485-44b6-ab37-def69fd5bc08" />
+
 
 ## RESULT
 Thus, the cube of the given data is calculated using 8051 Keil.
