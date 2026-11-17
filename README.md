@@ -21,6 +21,7 @@ To write and execute an Assembly language program for finding the square of a gi
 
 
 
+<img width="1600" height="852" alt="image" src="https://github.com/user-attachments/assets/9d6a5e36-de62-44f9-97fe-c167ee35d7bd" />
 
 
 
