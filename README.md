@@ -9,7 +9,7 @@ To write and execute an Assembly language program for finding the square of a gi
 - Keil μVision IDE
 
 ## ALGORITHM
-1. Enter the Assembly language program.
+1. Enter the Assembly language program..
 2. Provide the input value to Port 0 (P0).
 3. Execute the program.
 4. The output square value is stored in Port 2 (P2).
