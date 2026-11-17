@@ -5,7 +5,7 @@
 To write and execute an Assembly language program for finding the square of a given data using 8051 microcontroller in Keil software.
 
 ## APPARATUS REQUIRED
-- Personal computer
+- Personal computer,
 - Keil μVision IDE
 
 ## ALGORITHM
