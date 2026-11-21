@@ -13,24 +13,27 @@ To write and execute an Assembly language program for finding the square of a gi
 2. Provide the input value to Port 0 (P0).
 3. Execute the program.
 4. The output square value is stored in Port 2 (P2).
+## flow cart 
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/f4dfd4a3-75e2-4822-b1f9-900795c177cc" />
 
 ## PROGRAM
 ```
-
 ORG 0000H
-MOV R0,#50H
-MOV A,@R0
-MOV B,@R0
+MOV DPTR, #8100H
+MOVX A, @DPTR
+MOV B,A
 MUL AB
-INC R0
-MOV @R0,A
+MOV DPTR, #8102H
+MOVX @DPTR,A
+INC DPTR
+MOV A,B
+MOVX @DPTR,A
 END
-
 
 ```
 
 ## OUTPUT
-<img width="1600" height="844" alt="image" src="https://github.com/user-attachments/assets/845ef734-092b-4877-b847-f295ab08c789" />
+<img width="1600" height="830" alt="image" src="https://github.com/user-attachments/assets/4b8825ff-d605-4363-93c1-d4d1b9208498" />
 
 
 ## RESULT
@@ -50,30 +53,42 @@ To write and execute an Assembly language program for finding the cube of a give
 2. Provide the input value.
 3. Execute the program.
 4. The output cube value is stored in a memory location.
+## flow chart
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/2ef8bf1c-5b55-45ca-b57e-993556d1cfc3" />
 
 ## PROGRAM
 ```
 
-
-ORG 00H
-MOV R0,#50H
-MOV A,@R0
+ORG 0000H
+MOV DPTR, #9000H
+MOVX A, @DPTR
 MOV B,A
+MOV R1,A
 MUL AB
-MOV B,@R0
+MOV R2,B
+MOV B,R1
 MUL AB
-INC R0
-MOV @R0,A
-INC R0
-MOV @R0,B
+MOV DPTR, #9003H
+MOVX @DPTR,A
+MOV R3,B
+MOV B,R2
+MOV A,R1
+MUL AB
+ADD A,R3
+DEC DPL
+MOVX @DPTR,A
+MOV A,#00H
+ADDC A,B
+DEC DPL
+MOVX @DPTR,A
+HERE: SJMP HERE
 END
-
 
 ```
 
 
 ## OUTPUT
-<img width="1600" height="852" alt="image" src="https://github.com/user-attachments/assets/675a9c38-9485-44b6-ab37-def69fd5bc08" />
+<img width="1600" height="797" alt="image" src="https://github.com/user-attachments/assets/ad50e671-0c65-46e4-89fe-5734089875fe" />
 
 
 ## RESULT
